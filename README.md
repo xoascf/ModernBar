@@ -1,7 +1,7 @@
 ﻿![alt text](https://github.com/Lixkote/ModernBar/blob/master/logo.png "ModernBar")
 
 
-ModernBar makes yours Windows 11 Shell Simpler by replacing your modern Windows taskbar with the classic Windows taskbar layout.
+Makes yours Windows 11 Shell Simpler by replacing your modern Windows taskbar with the classic Windows taskbar layout.
 
 ModernBar is based on the [ManagedShell](https://github.com/cairoshell/ManagedShell) library for great compatibility and performance and on [RetroBar] (https://github.com/dremin/RetroBar) by Dremin.
 It also uses [WPF UI] (https://github.com/lepoco/wpfui) and [FluentWPF](https://github.com/sourcechord/FluentWPF)
@@ -11,8 +11,8 @@ It also uses [WPF UI] (https://github.com/lepoco/wpfui) and [FluentWPF](https://
 - [.NET 6.0.7 or later desktop runtime](https://dotnet.microsoft.com/download/dotnet/6.0/runtime) (select the appropriate download button under "Run desktop apps")
 
 ## Screenshots
-https://github.com/Lixkote/ModernBar/blob/master/ModernBar-preview.png
-https://github.com/Lixkote/ModernBar/blob/master/properties.png
+(https://github.com/Lixkote/ModernBar/blob/master/ModernBar-preview.png "preview")
+(https://github.com/Lixkote/ModernBar/blob/master/properties.png "properties")
 
 ## Features
 - Replaces default Windows 11 taskbar with classic layout
