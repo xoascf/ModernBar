@@ -1,0 +1,71 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:s="clr-namespace:System;assembly=mscorlib">
+
+    <s:String x:Key="ModernBar_properties">Свойства ModernBar</s:String>
+    <s:String x:Key="taskbar_options">Панель задач</s:String>
+    <s:String x:Key="taskbar_appearance">Оформление панели задач</s:String>
+    <s:String x:Key="notification_area">Область уведомлений</s:String>
+    <s:String x:Key="autostart">Запускать при при в_ходе в систему</s:String>
+    <s:String x:Key="language_text">_Язык:</s:String>
+    <s:String x:Key="language_tip">Выберите язык, который хотите использовать.</s:String>
+    <s:String x:Key="theme_text">_Тема оформления:</s:String>
+    <s:String x:Key="theme_tip">Устанавливайте темы оформления в папку Themes.</s:String>
+    <s:String x:Key="location_text">Рас_положение:</s:String>
+    <s:String x:Key="location_tip">Изменение положения панели задач на экране.</s:String>
+    <x:Array x:Key="location_values" Type="s:String">
+        <s:String>Слева</s:String>
+        <s:String>Вверху</s:String>
+        <s:String>Справа</s:String>
+        <s:String>Внизу</s:String>
+    </x:Array>
+    <s:String x:Key="allow_font_smoothing">Пр_именять сглаживание шрифтов</s:String>
+    <s:String x:Key="collapse_tray_icons">Скр_ывать неиспользуемые значки</s:String>
+    <s:String x:Key="customize">_Настроить...</s:String>
+    <s:String x:Key="show_clock">Отображать _часы</s:String>
+    <s:String x:Key="show_multi_mon">Показывать на н_ескольких дисплеях</s:String>
+    <s:String x:Key="show_quick_launch">Отображать панель _быстого запуска</s:String>
+    <s:String x:Key="select_location">_Выбрать папку...</s:String>
+    <s:String x:Key="quick_launch_folder">Панель быстого запуска - выберите папку</s:String>
+    <s:String x:Key="use_software_rendering">Использовать п_рограммную отрисовку</s:String>
+    <s:String x:Key="ok_dialog">ОК</s:String>
+
+    <s:String x:Key="customize_notifications">Настройка уведомлений</s:String>
+    <s:String x:Key="customize_notifications_info">ModernBar отображает значки для активных и срочных уведомлений, скрывая неактивные. Можно изменить такое поведение для элементов следующего списка.</s:String>
+    <s:String x:Key="customize_notifications_instruction">Выберите элемент, а затем задайте нужное поведение:</s:String>
+    <s:String x:Key="hide_when_inactive">Скрывать, если неактивно</s:String>
+    <s:String x:Key="always_show">Всегда отображать</s:String>
+    <s:String x:Key="name_heading">Имя</s:String>
+    <s:String x:Key="behavior_heading">Поведение</s:String>
+
+    <s:String x:Key="start_text">Пуск</s:String>
+    <s:String x:Key="start_text_xp">пуск</s:String>
+    <s:String x:Key="start_button_tip_98">Начните работу с нажатия этой кнопки.</s:String>
+    <s:String x:Key="start_button_tip">Начните работу с нажатия этой кнопки</s:String>
+    <s:String x:Key="start_button_tip_vista">Пуск</s:String>
+
+    <s:String x:Key="ModernBar_title">Панель задач ModernBar</s:String>
+    <s:String x:Key="toolbars">_Панели инструментов</s:String>
+    <s:String x:Key="quick_launch">_Быстрый запуск</s:String>
+    <s:String x:Key="new_toolbar">Созд_ать панель инструментов...</s:String>
+    <s:String x:Key="show_taskman_2k">Д_испетчер задач...</s:String>
+    <s:String x:Key="show_taskman">Д_испетчер задач</s:String>
+    <s:String x:Key="tray_properties">_Свойства</s:String>
+    <s:String x:Key="update_available">Доступно _обновление...</s:String>
+    <s:String x:Key="exit_ModernBar">Вы_йти из ModernBar</s:String>
+    <s:String x:Key="customize_notifications_menu">Настройка _уведомлений...</s:String>
+
+    <s:String x:Key="restore">_Восстановить</s:String>
+    <s:String x:Key="move">_Переместить</s:String>
+    <s:String x:Key="size">Разм_ер</s:String>
+    <s:String x:Key="minimize">_Свернуть</s:String>
+    <s:String x:Key="maximize">_Развернуть</s:String>
+    <s:String x:Key="close">_Закрыть</s:String>
+
+    <s:String x:Key="show_hidden">Отображать скрытые значки</s:String>
+    <s:String x:Key="hide">Скрыть</s:String>
+
+    <s:String x:Key="set_time">Настройка _даты/времени</s:String>
+
+    <s:String x:Key="open_folder">&amp;Открыть папку</s:String>
+</ResourceDictionary>

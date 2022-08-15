@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="ModernBar.Controls.NotifyIcon"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ModernBar.Controls"
+             xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+             Loaded="NotifyIcon_OnLoaded"
+             Unloaded="NotifyIcon_OnUnloaded">
+    <StackPanel>
+        <Border x:Name="NotifyIconBorder"
+                ToolTip="{Binding Path=Title}"
+                MouseUp="NotifyIcon_OnMouseUp"
+                MouseDown="NotifyIcon_OnMouseDown"
+                MouseEnter="NotifyIcon_OnMouseEnter"
+                MouseLeave="NotifyIcon_OnMouseLeave"
+                MouseMove="NotifyIcon_OnMouseMove"
+                PreviewMouseWheel="NotifyIcon_OnPreviewMouseWheel">
+            <Image Source="{Binding Path=Icon, Mode=OneWay}"
+                   Focusable="True"
+                   Name="NotifyIconImage"
+                   Style="{DynamicResource NotifyIcon}" />
+        </Border>
+        <local:NotifyBalloon x:Name="BalloonControl" />
+    </StackPanel>
+</UserControl>

@@ -1,0 +1,104 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworks>netcoreapp3.1;net480;net6.0-windows10.0.19041.0</TargetFrameworks>
+	  <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <StartupObject>ModernBar.Program</StartupObject>
+    <AssemblyVersion>1.0.0.8</AssemblyVersion>
+    <FileVersion>1.0.0.8</FileVersion>
+    <ApplicationIcon>Resources\ModernBar.ico</ApplicationIcon>
+	<ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <Platforms>AnyCPU;x86;ARM64</Platforms>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net480'">
+    <LangVersion>8</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="Resources\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Languages\*.xaml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\*.xaml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\ModernBar.ico" />
+    <None Remove="Resources\shader_invert.ps" />
+    <None Remove="Resources\start9x.png" />
+    <None Remove="Languages\English.xaml" />
+    <None Remove="Themes\System.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="Themes\Fluent Acrylic.xaml" />
+    <Page Remove="Themes\Fluent Dark Acrylic.xaml" />
+    <Page Remove="Themes\Fluent Light Acrylic.xaml" />
+    <Page Remove="Themes\Fluent Light.xaml" />
+    <Page Remove="Themes\Windows 11.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\ModernBar.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentWPF" Version="0.10.2" />
+    <PackageReference Include="gong-wpf-dragdrop" Version="3.1.1" />
+    <PackageReference Include="ManagedShell" Version="0.0.181" />
+    <PackageReference Include="MicaWPF" Version="4.0.12" />
+    <PackageReference Include="System.Net.Http.Json" Version="6.0.0" />
+    <PackageReference Include="WPF-UI" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net480'">
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\shader_invert.ps" />
+    <Resource Include="Resources\ModernBar.ico">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\start9x.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Themes\Fluent Acrylic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Themes\Fluent Light Acrylic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Themes\Fluent Light.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Themes\Windows 11.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+
+</Project>

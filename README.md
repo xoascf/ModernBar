@@ -11,8 +11,8 @@ It also uses [WPF UI] (https://github.com/lepoco/wpfui) and [FluentWPF](https://
 - [.NET 6.0.7 or later desktop runtime](https://dotnet.microsoft.com/download/dotnet/6.0/runtime) (select the appropriate download button under "Run desktop apps")
 
 ## Screenshots
-![alt text](https://github.com/Lixkote/ModernBar/blob/master/ModernBar-preview.png "preview")
-![alt text](https://github.com/Lixkote/ModernBar/blob/master/properties.png "properties")
+(https://github.com/Lixkote/ModernBar/blob/master/ModernBar-preview.png "preview")
+(https://github.com/Lixkote/ModernBar/blob/master/properties.png "properties")
 
 ## Features
 - Replaces default Windows 11 taskbar with classic layout
